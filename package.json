@@ -1,0 +1,25 @@
+{
+  "fitbit": {
+    "appUUID": "070c24fc-7396-4e71-bd9a-3869f6a10660",
+    "appType": "app",
+    "appDisplayName": "Message Demo",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#009688",
+    "requestedPermissions": [
+      "access_internet",
+      "run_background",
+      "access_heart_rate",
+      "access_location",
+      "access_user_profile",
+      "access_activity"
+    ],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Message Demo"
+      }
+    }
+  }
+}
