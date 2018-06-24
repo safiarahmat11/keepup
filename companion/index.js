@@ -1,9 +1,7 @@
 import * as messaging from "messaging";
-
-
 import { me } from "companion"
 
-console.log("Companion Running ");
+console.log("Companion Running");
 
 //Server where the API is runnong (must be HTTPS)
 const host = "https://kcfojvchif.execute-api.us-east-2.amazonaws.com/prod";
@@ -22,8 +20,8 @@ messaging.peerSocket.onmessage = evt => {
 
   var url = host + "/writedata"; // add a path to the URL
 
-  var data = evt.data;;
-  console.log("hello");
+  var data = evt.data;
+  console.log("companion message");
 
   fetch(url, {
       method : "POST",
@@ -34,9 +32,10 @@ messaging.peerSocket.onmessage = evt => {
     }) //Extract JSON from the response
     .then(function(data) { 
       console.log(JSON.stringify(data));
-  //    messaging.peerSocket.send(JSON.stringify(data)); 
+      messaging.peerSocket.send("connected"); 
   }) // Send it to the watch as a JSON string
     .catch(function(error) {
-      console.log("hamza3");
-      console.log(error);}); // Log any errors with Fetch
+      console.log(error);
+      messaging.peerSocket.send("disconnected");
+  }); // Log any errors with Fetch
 }
