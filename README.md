@@ -25,6 +25,12 @@ Welcome to the keepup wiki!
 
 ![](https://github.com/hamzaowais/keepup/blob/master/9.JPG?raw=true)
 
+![](https://github.com/hamzaowais/keepup/blob/master/10.JPG?raw=true)
+
+![](https://github.com/hamzaowais/keepup/blob/master/11.JPG?raw=true)
+
+![](https://github.com/hamzaowais/keepup/blob/master/12.JPG?raw=true)
+
 
 
 
