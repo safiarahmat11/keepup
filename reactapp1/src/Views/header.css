@@ -1,0 +1,32 @@
+.header-image{
+  background-color: #DCDCDC;
+  height:auto;
+  text-align: left;
+  
+  border-bottom: solid;
+  border-width: 6px;
+  border-color: #ffd200;
+}
+
+.yello{
+  color: #ffd200;
+}
+
+.logo {
+	display: block;
+	margin: 10px auto;
+	vertical-align: middle;
+  width:100%;
+  max-height: 150px;
+
+}
+
+
+.hr{
+  width:30%;
+
+}
+
+h3 {
+	color: white;
+}
